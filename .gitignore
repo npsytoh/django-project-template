@@ -273,3 +273,7 @@ dump.rdb
 sample/media/
 
 .pytest_cache/
+
+# Empty directories
+/media/*
+!/media/.gitkeep
