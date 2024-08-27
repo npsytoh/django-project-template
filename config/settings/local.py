@@ -4,7 +4,6 @@ from .base import env
 
 # GENERAL
 DEBUG = True
-SECRET_KEY = '{{ secret_key }}'
 ALLOWED_HOSTS = ['localhost', '*']
 
 # ADMIN

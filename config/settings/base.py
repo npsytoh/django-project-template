@@ -12,6 +12,7 @@ env = environ.Env(
 )
 env.read_env(BASE_DIR / '.env')
 
+SECRET_KEY = env('DJANGO_SECRET_KEY')
 TIME_ZONE = env('TZ')
 LANGUAGE_CODE = 'ja'
 
@@ -28,7 +29,7 @@ ROOT_URLCONF = '{{ project_name }}.urls'
 WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 # APPS
-DAJNGO_APPS = [
+DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.sites',
@@ -47,7 +48,7 @@ THIRD_PARTY_APPS=[
 LOCAL_APPS=[
     'accounts',
 ]
-INSTALLED_APPS=DAJNGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+INSTALLED_APPS=DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 # MIDDLEWARE
 MIDDLEWARE = [

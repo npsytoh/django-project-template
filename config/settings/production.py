@@ -4,7 +4,6 @@ from .base import env
 
 # GENERAL
 DEBUG = False
-SECRET_KEY = env('DJANGO_SECRET_KEY')
 ALLOWED_HOSTS = [env('DJANGO_ALLOWED_HOSTS')]
 
 # ADMIN
